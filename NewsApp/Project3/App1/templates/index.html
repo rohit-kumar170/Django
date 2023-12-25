@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>News Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOysewffegv3Xipma34MD+dH/1frf84/j6cY/iJTQerg4e5y56yu59JvoRxT2MZw1T" crossorigin="anonymous">  
+
+</head>
+<body>
+    <center>
+    <div class="megatron"style="color:black">
+    <h1 style="color:pearl white;">Find the most recent news on our website:</h1>
+</div>
+    <div class="containerin">
+    {% for new,desc,i in mylist %}
+    <img src=" {{i}}"alt="">
+    {{value|linebreaks}}
+    <h1> News:</h1>{{new}}
+    {{value|linebreaks}}
+    <h2>Description:</h2>{{desc}}
+    {% endfor %}
+</div>
+    </center>
+</body>
